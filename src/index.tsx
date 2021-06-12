@@ -1,7 +1,12 @@
+// Core
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+// Components
 import App from './App';
+
+// Styles
+import './view/styles/index.sass';
 
 ReactDOM.render(
   <StrictMode>

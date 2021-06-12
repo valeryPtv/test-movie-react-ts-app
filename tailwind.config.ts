@@ -1,4 +1,15 @@
+// @ts-ignore
 const defaultTheme = require('tailwindcss/defaultTheme');
+
+const productionOptions = process.env.NODE_ENV === 'production' ? {
+  purge: [
+    './view/**/*.{js, jsx, ts, tsx}',
+    './view/**/**/*.{js, jsx, ts, tsx}',
+    './view/**/**/**/*.{js, jsx, ts, tsx}',
+    './view/components/**/*.{js, jsx, ts, tsx}',
+    './view/container/**/*.{js, jsx, ts, tsx}',
+  ],
+} : { purge: []};
 
 module.exports = {
   theme: {
@@ -12,4 +23,5 @@ module.exports = {
   },
   variants: {},
   plugins:  [],
+  ...productionOptions,
 };

@@ -1,10 +1,13 @@
+// Core
 import React from 'react';
-import './App.css';
-import 'reset-css';
+
+// Containers
+import { MoviesList } from './view/containers/MoviesList';
 
 function App() {
   return (
     <div className = 'App'>
+      <MoviesList />
     </div>
   );
 }
