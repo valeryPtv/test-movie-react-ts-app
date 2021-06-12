@@ -5,7 +5,7 @@ import clsx from 'clsx';
 // Types
 import { TopRatedMovieType } from '../../../bus/movies/api/getTopRatedMovies/types';
 import { StarIcon } from './elements/StarIcon';
-import { ToggleMovieIdInFavouritesType } from '../../../bus/movies/hooks/types';
+import { ToggleMovieIdInFavouritesType } from '../../../bus/movies/hooks/useFavouriteMoviesStore/types';
 
 type IMovieCardPropsType = {
   movie: TopRatedMovieType,

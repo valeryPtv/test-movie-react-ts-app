@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 // Bus
 import { useTopRatedMoviesQuery } from '../../../bus/movies';
-import { useFavouriteMoviesStore } from '../../../bus/movies/hooks/useFavouriteMoviesStore';
+import { useFavouriteMoviesStore } from '../../../bus/movies';
 
 // Components
 import { MovieCard } from '../../components/MovieCard';

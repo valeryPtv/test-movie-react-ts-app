@@ -21,7 +21,7 @@ export const MoviesSortSelect: FC<MoviesSortSelectPropsType> = ({ className, set
       <label
         className = 'mb-3'
         htmlFor = 'moviesSortOrderSelect'>
-        <p>Choose sort order</p>
+        <p>Sort order by rating</p>
       </label>
       <div className = { classes[ 'select-container' ] }>
         <select
